@@ -1,9 +1,10 @@
 import React from 'react';
+import UserBanner from '../../components/UserBanner/UserBanner';
 
 const Statistics = () => {
     return (
         <div>
-            here is the home compo
+            <UserBanner/>
         </div>
     );
 };
