@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <header className='flex justify-around py-5 '>
+        <header className='flex justify-around py-5 sticky top-0'>
             <div className="logo text-2xl font-semibold">CareerHub</div>
             <div className="links">
                 <ul className='flex gap-4'>
