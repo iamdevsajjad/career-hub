@@ -37,7 +37,7 @@ const JobCategory = () => {
                 <p className='font-myFont font-medium text-2xl text-[#757575] leading-[26px] text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className="categories grid grid-cols-4  gap-10 my-12  ">
                     {
-                        category.map(jobs => <JobCard key={category.available} jobs={jobs}/>)
+                        category.map((jobs,index) => <JobCard key={index+1} jobs={jobs}/>)
                     }
                 </div>
             </div>

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="bg-[#1A1919] p-6 font-myFont text-white">
+    <footer className="bg-[#1A1919] py-10 font-myFont text-white">
       <div className="fullFooter grid grid-cols-5 container mx-auto  border-b-2">
         <div className="mx-auto navGroup">
           <h2 className="text-3xl font-semibold">Career Hub</h2>
@@ -55,7 +55,7 @@ const Footer = () => {
         <p>@2023 CareerHub. All Rights Reserved</p>
         <p>powered by CareerHub</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

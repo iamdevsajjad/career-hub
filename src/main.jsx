@@ -9,6 +9,7 @@ import Statistics from "./Pages/Statistics/Statistics";
 
 
 const router = createBrowserRouter([
+
   {
     path: "/",
     element: <MainLayout/>,
