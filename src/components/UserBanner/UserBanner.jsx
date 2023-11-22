@@ -4,7 +4,7 @@ import "../../App.css";
 
 const UserBanner = () => {
   return (
-    <div className="  w-full bg-gray-300 relative ">
+    <div className="  w-full grayGradient relative ">
       <div className="deviderDiv pt-20 md:w-full md:px-36 flex mx-auto justify-between  items-center ">
         <div className=" w-1/2 space-y-4 font-myFont ">
             <h1 className="text-7xl  font-semibold leading-[80px] ">

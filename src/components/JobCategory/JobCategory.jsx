@@ -32,10 +32,10 @@ const category = [
 const JobCategory = () => {
     return (
         <div>
-            <div className="texts text-center mt-20">
-                <h1 className='text-5xl font-myFont font-bold leading-normal'>Job Category List</h1>
-                <p className='font-myFont font-medium text-2xl text-[#757575] leading-[26px]'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div className="categories">
+            <div className="texts mt-20 container mx-auto">
+                <h1 className='text-5xl font-myFont font-bold leading-normal text-center my-5'>Job Category List</h1>
+                <p className='font-myFont font-medium text-2xl text-[#757575] leading-[26px] text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <div className="categories grid grid-cols-4  gap-10 my-12  ">
                     {
                         category.map(jobs => <JobCard key={category.available} jobs={jobs}/>)
                     }
