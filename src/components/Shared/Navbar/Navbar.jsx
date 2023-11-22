@@ -1,10 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../.././../App.css";
 const Navbar = () => {
   return (
     <header className="flex justify-around py-5 sticky top-0 z-30 grayGradient">
-      <div className="logo text-2xl font-semibold">CareerHub</div>
+      <button className="logo text-2xl font-semibold"><Link to={"/"}>CareerHub</Link></button>
       <div className="links">
         <ul className="flex gap-5 font-semibold">
           <li>
