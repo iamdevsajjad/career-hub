@@ -1,0 +1,15 @@
+p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 250% */
+}
+
+h3 {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
