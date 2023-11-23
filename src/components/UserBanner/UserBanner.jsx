@@ -16,7 +16,7 @@ const UserBanner = () => {
               you need. Its your future. Come find it. Manage all your job
               application from start to finish.
             </p>
-            <button className="bg-gradient-to-r  from-[#7E90FE] to-[#9873FF] text-white py-2 px-3 rounded-sm">
+            <button className="btn">
               Get Started
             </button>
         </div>

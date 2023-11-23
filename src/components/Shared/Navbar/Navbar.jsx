@@ -39,7 +39,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <button className="bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white py-2 px-3 rounded-sm">
+      <button className="btn">
         Start Applying
       </button>
     </header>

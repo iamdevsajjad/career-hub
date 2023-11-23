@@ -6,9 +6,9 @@ import money from "../../../assets/icons/money.png";
 
 const Job = ({ job }) => {
   return (
-    <article className="border-2  border-black rounded-md p-5">
-      <figure className="w-28">
-        <img src={job.logo} alt="" />
+    <article className="border border-gray-200 rounded-md p-5 hover:shadow-md shadow duration-200">
+      <figure className="w-28 h-14">
+        <img className="object-contain w-full" src={job.logo} alt={job.title} />
       </figure>
       <div className="tittle text-[#474747]">
         <h4 className="text-2xl font-semibold leading-normal">
@@ -37,7 +37,7 @@ const Job = ({ job }) => {
         </div>
       </div>
       <Link  to={`/details/${job.id}`}>
-        <button className="text-xl leading-normal font-myFont text-white bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-1 px-2 rounded-sm">
+        <button className="btn">
           View Details
         </button>
       </Link>
