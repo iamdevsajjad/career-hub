@@ -3,6 +3,8 @@ import Job from "./Job/Job";
 
 const FeaturedJobs = () => {
   const [jobs, setJobs] = useState([]);
+
+
   useEffect(() => {
     fetch("./jobs.json")
       .then((res) => res.json())
