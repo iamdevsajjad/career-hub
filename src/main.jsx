@@ -7,6 +7,7 @@ import AppliedJobs from "./Pages/AppliedJobs/AppliedJobs";
 import Blogs from "./Pages/Blogs/Blogs";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Statistics from "./Pages/Statistics/Statistics";
+import ViewDetails from "./Pages/ViewDetails/ViewDetails";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/appliedJobs",
         element: <AppliedJobs/>
+      },
+      {
+        path: "/details/:id",
+        element: <ViewDetails/>
       },
       {
         path: "/blogs",

@@ -36,7 +36,7 @@ const Job = ({ job }) => {
           <h1>Salary: {job.salary}</h1>
         </div>
       </div>
-      <Link  to={"my"}>
+      <Link  to={`/details/${job.id}`}>
         <button className="text-xl leading-normal font-myFont text-white bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-1 px-2 rounded-sm">
           View Details
         </button>
