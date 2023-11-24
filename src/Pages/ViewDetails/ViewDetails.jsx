@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../../App.css";
 import calendarImg from "../../assets/icons/calendar.png";
@@ -20,28 +20,24 @@ const ViewDetails = () => {
 
   const foundObj = jobs?.find((job) => Number(job.id) === Number(id));
 
-  const handleApplyButton = (props) => {
-    const newArray = [];
+  const handleApplyButton = (id) => {
+    let newObj = {};
 
+    const applidJobs = localStorage.getItem("applied-jobs");
 
-
-    const appliedJob = JSON.parse(localStorage.getItem("appliedJob"));
-  
-    if (!appliedJob) {
-      newArray.push(foundObj)
-      localStorage.setItem("appliedJob", JSON.stringify(newArray));
-      alert("product added")
-    }else{
-      
-
-
-
-      
-      newArray.push(...appliedJob, foundObj)
-      localStorage.setItem("appliedJob", JSON.stringify(newArray));
-      alert("product added.")
+    if (applidJobs) {
+      newObj = JSON.parse(applidJobs);
     }
-    
+
+    const alreadyApplied = newObj[id];
+
+    if (alreadyApplied) {
+      return alert("Already applied");
+    } else {
+      newObj[id] = true;
+    }
+
+    localStorage.setItem("applied-jobs", JSON.stringify(newObj));
   };
 
   return (
@@ -162,9 +158,7 @@ const ViewDetails = () => {
             </div>
           </div>
           <button
-            onClick={() => {
-              handleApplyButton(foundObj);
-            }}
+            onClick={() => handleApplyButton(foundObj.id)}
             className="btn w-full"
           >
             Apply Now
